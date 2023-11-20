@@ -36,8 +36,6 @@ public class Tekst extends Innlegg {
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
-
-		throw new UnsupportedOperationException(TODO.method());
-
+		return String.format("<h2>%s@%s [%o]</h2>\n", getBruker(), getDato(), getLikes()) + String.format("<p>%s</p>\n", getTekst()) + "<hr>";
 	}
 }
